@@ -1,0 +1,10 @@
+h1,p{font-family:Verdana;color:red}
+  .resaltado{font-family:Arial;font-size:10pt;border:double 6px #6d9e4d}
+  .mayusculas{text-transform: uppercase;font-size: 15pt;}
+  .sombreado{background-color: #50a1a7;}
+  a{text-decoration:none;font-family:Helvetica}
+  a:hover{font-size: 20pt;background-color: #c070d8}
+  a:link{color:orange}
+  a:visited{color: #0011ff;}
+  body{margin-top: 150px; margin-center: 150px;background-image: url("./Imagenes/EVO.jpg");background-repeat: no-repeat; background-position: center; background-attachment: fixed;}
+  

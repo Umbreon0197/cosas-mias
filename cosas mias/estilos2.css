@@ -1,0 +1,9 @@
+body{background-image:url(./Imagenes/1200px-Hydreigon.png); background-position: center; background-repeat:no-repeat;}
+table{background-color: blanchedalmond; border: 5px; font-family: Verdana;font-size: 12pt;}
+input, textarea,select{font-family: Verdana font size 12pt;}
+.Obligatorio{color:red;}
+.resaltado:hover {font-size: 20pt;}
+input:required{color: red; text-transform: uppercase;}
+input[type="submit"]:hover{font-size: 20pt;}
+
+
