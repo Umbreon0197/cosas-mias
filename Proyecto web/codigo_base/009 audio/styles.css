@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.song {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    display: inline-block;
+}
+
+.song h2 {
+    font-size: 24px;
+}
+
+.song p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+audio {
+    width: 100%;
+}
+

@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.video-section {
+    margin: 20px;
+}
+
+.video-section video {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.movie-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.movie-info h2 {
+    font-size: 24px;
+}
+
+.movie-info p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.reserve-button {
+    background-color: #e44d26;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reserve-button:hover {
+    background-color: #ff6347;
+}

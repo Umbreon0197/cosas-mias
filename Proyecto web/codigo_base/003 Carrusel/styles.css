@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 300px; /* Ancho de cada imagen en el carrusel */
+    position: relative;
+}
+
+.carousel-slide {
+    width: 100%;
+    height: auto;
+}
+
+.prev-button, .next-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}
