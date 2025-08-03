@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Lista Avanzada</title>
+<img src="./logo consum.png" width="250" length="250"></img>
+<style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #ffffff;
+          color: ffb266;
+          text-align: center;
+          padding: 40px;
+        }
+
+   input {
+          padding: 10px;
+          font-size: 16px;
+          border-radius: 6px;
+          border: 1px solid #ccc;
+          margin: 5px;
+          width: 180;
+       }
+
+button {
+         padding: 10px 16px;
+         font-size: 16px;
+         background-color: #f89b34;
+         color: white;
+         border: none;
+         border-radius: 6px;
+         cursor: pointer;
+         margin: 5px;
+         transition: background-color 0.3s ease;
+       }
+
+button:hover {
+    background-color: #f23f38;
+}
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 30px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #e6e5e5;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    }
+
+    li {
+        padding: 12px 16px;
+        font-size: 18px;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+
+   li:last-child {
+     border-bottom: none;
+   }
+   
+   .comprado {
+    text-decoration: line-through;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+   }
+
+
+   .contador {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #000000;
+   }  
+
+   .eliminar {
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    font-size: 18px;
+    cursor: pointer;
+   } 
+
+   .eliminar:hover {
+    color:#000000;
+   }     
+</style>
+</head>
+<body>
+      <h1>Lista de la compra</h1>
+
+      <input type="text" id="producto" placeholder="Producto">
+      <input type="number" id="cantidad" placeholder="Cantidad" min="1">
+      <br>
+      <button onclick="añadirProducto()">Añadir producto</button>
+      <button onclick="vaciarLista()">Vaciar lista</button>
+      
+      <div class="contador" id="contador">Total Productos: 0</div>
+      <div id="contenedorLista"></div>
+      
+<script>
+let totalProductos = 0;
+let productos = [];
+
+function actualizarContador() {
+    document.getElementById("contador").textContent = "Total Productos: " + totalProductos;
+}
+
+function guardarEnLocalStorage() {
+    localStorage.setItem("listaCompras", JSON.stringify(productos));
+}
+
+function cargarDesdeLocalStorage() {
+    const datosGuardados = localStorage.getItem("listaCompras");
+    if (datosGuardados) {
+        productos = JSON.parse(datosGuardados);
+        productos.forEach(p => agregarElementoDOM(p));
+        totalProductos = productos.reduce((acc, p) => acc + p.cantidad, 0);
+        actualizarContador();
+    }
+}
+
+function añadirProducto() {
+    const nombre = document.getElementById("producto").value.trim();
+    const cantidad = parseInt(document.getElementById("cantidad").value);
+
+    if (!nombre || !cantidad || cantidad <= 0) {
+        alert("Por favor, introduce producto y cantidad válida.");
+        return;
+    }
+
+    const producto = { nombre, cantidad, comprado: false };
+    productos.push(producto);
+    agregarElementoDOM(producto);
+
+    totalProductos += cantidad;
+    actualizarContador();
+    guardarEnLocalStorage();
+
+    document.getElementById("producto").value = "";
+    document.getElementById("cantidad").value = "";
+    document.getElementById("producto").focus();
+}
+
+function agregarElementoDOM(producto) {
+    let lista = document.getElementById("listaCompras");
+    if (!lista) {
+        lista = document.createElement("ul");
+        lista.id = "listaCompras";
+        document.getElementById("contenedorLista").appendChild(lista);
+    }
+
+    const item = document.createElement("li");
+    item.innerHTML = `
+        <span class="nombreProducto ${producto.comprado ? 'comprado' : ''}" onclick="marcarComoComprado(this)">
+            🛒 ${producto.nombre} (x${producto.cantidad})
+        </span>
+        <button class="eliminar" onclick="eliminarProducto(this, ${producto.cantidad}, '${producto.nombre}')">❌</button>
+    `;
+    lista.appendChild(item);
+}
+
+function eliminarProducto(boton, cantidad, nombre) {
+    const item = boton.parentNode;
+    item.remove();
+
+    productos = productos.filter(p => !(p.nombre === nombre && p.cantidad === cantidad));
+    totalProductos -= cantidad;
+    actualizarContador();
+    guardarEnLocalStorage();
+}
+
+function vaciarLista() {
+    const lista = document.getElementById("listaCompras");
+    if (lista) lista.remove();
+
+    productos = [];
+    totalProductos = 0;
+    actualizarContador();
+    guardarEnLocalStorage();
+}
+
+function marcarComoComprado(span) {
+    span.classList.toggle("comprado");
+    const texto = span.textContent;
+    const match = texto.match(/ (.+) \(x(\d+)\)/);
+    if (match) {
+        const nombre = match[1];
+        const cantidad = parseInt(match[2]);
+        productos = productos.map(p => {
+            if (p.nombre === nombre && p.cantidad === cantidad) {
+                return { ...p, comprado: !p.comprado };
+            }
+            return p;
+        });
+        guardarEnLocalStorage();
+    }
+}
+
+window.onload = function () {
+    cargarDesdeLocalStorage();
+};
+</script>
+</body>
+</html>
