@@ -1,0 +1,18 @@
+<!ELEMENT coches (coche+)>
+
+<!ELEMENT coche (revision)>
+<!ATTLIST coche matricula CDATA #REQUIRED>
+
+<!ELEMENT revision (marca, modelo, año, color, precio, potencia, combustible, transmision, kilometraje, descripcion)>
+<!ATTLIST revision id CDATA #REQUIRED>
+
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT año (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT potencia (#PCDATA)>
+<!ELEMENT combustible (#PCDATA)>
+<!ELEMENT transmision (#PCDATA)>
+<!ELEMENT kilometraje (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coches>
+
+<coche matricula="B-0124-GM">
+<revision id="1011984">
+<marca>Mercedes Benz</marca>
+<modelo>300D (W123)</modelo>
+<año>1984</año>
+<color>Gris</color>
+<precio>2400 €</precio>
+<potencia>88 CV</potencia>
+<combustible>Diesel</combustible>
+<transmision>Manual, 4 velocidades (Trasera)</transmision>
+<kilometraje>305008 km</kilometraje>
+<descripcion><![CDATA[
+                <h1>Revisión a los 300,000 km</h1>
+                <p>Se realizó un cambio del radiador y revisión del anticongelante.</p>
+            ]]></descripcion>
+        </revision>
+    </coche>
+
+<coche matricula="V-7345-GK">
+<revision id="1011999">
+<marca>BMW</marca>
+<modelo>740i (e38)</modelo>
+<año>1999</año>
+<color>Azul Pacífico metalizado</color>
+<precio>11400 €</precio>
+<potencia>286 CV</potencia>
+<combustible>Gasolina</combustible>
+<transmision>Automática, 5 velocidades (Trasera)</transmision>
+<kilometraje>245114 km</kilometraje>
+<descripcion><![CDATA[
+            <h1>Revisión a los 245,000 km</h1>
+            <p>Se realizó un cambio de la centralita y revisión de los discos de freno.</p>
+            ]]></descripcion>
+        </revision>
+    </coche>
+    
+<coche matricula="6753 BLP">
+<revision id="16072001">
+<marca>Audi</marca>
+<modelo> S8 4.2 (D2)</modelo>
+<año>2001</año>
+<color>	Ebony Pearl (Negro Perla)</color>
+<precio>11400 €</precio>
+<potencia> 360CV</potencia>
+<combustible> Gasolina</combustible>
+<transmision> Automatica, 5 velocidades (Quattro)</transmision>
+<kilometraje> 225369km</kilometraje>
+ <descripcion><![CDATA[
+                    <h1>Revisión a los 200,000 km"</h1>
+                    <p>Se realizó un cambio de la centralita y revisión de an.</p>
+                ]]></descripcion>
+            </revision>
+    </coche>
+
+<coche matricula="4185 GFM">
+<revision id ="16062008">
+<marca>Mercedes Benz</marca>
+<modelo> E500 (W211)</modelo>
+<año>2009</año>
+<color>	Magno Allanitgrau Metálico Mate (Color Mate)</color>
+<precio>11.900 €</precio>
+<potencia> 388CV</potencia>
+<combustible> Gasolina</combustible>
+<transmision> Automática, 5 velocidades (4MATIC)</transmision>
+<kilometraje> 125110km</kilometraje>
+ <descripcion><![CDATA[
+                    <h1>Revisión a los 100,000 km"</h1>
+                    <p>Se realizó un cambio de las pastillas de freno y suspension.</p>
+                ]]></descripcion>
+            </revision>
+    </coche>
+
+<coche matricula="9201 KXR">
+<revision ID ="31052009">
+<marca>Maserati</marca>
+<modelo> Quattroporte 3.0 V6</modelo>
+<año>2018</año>
+<color>	nero ribelle metallic (Negro)</color>
+<precio>54.990 €</precio>
+<potencia> 430 CV</potencia>
+<combustible> Gasolina</combustible>
+<transmision> Automatica, 8 Velocidades (Trasera)</transmision>
+<kilometraje> 70125km</kilometraje>
+ <descripcion><![CDATA[
+                    <h1>Revisión a los 70,000 km"</h1>
+                <p>Se hizó una revision periodica del coche,.</p>
+                ]]></descripcion>
+            </revision>
+    </coche>
+    
+<coche matricula="M-2591-OC">
+<revision id="1011993">
+<marca>BMW</marca>
+<modelo> 850i (E31)</modelo>
+<año>03/1993</año>
+<color>	Mauritius Blue Metallic	(Azul Metalico)</color>
+<precio>33.820 €</precio>
+<potencia> 299 CV</potencia>
+<combustible> Gasolina</combustible>
+<transmision> Automatica, 8 Velocidades (Trasera)</transmision>
+<kilometraje> 85210 km</kilometraje>
+ <descripcion><![CDATA[
+                    <h1>Revisión a los 80,000 km"</h1>
+                <p>Se realizó un cambio de la centralita, cambio de correa de distribuicion y alternador,.</p>
+                ]]></descripcion>
+            </revision>
+    </coche>
+
+<coche matricula="PO-4862-BG">
+<revision id="1011997">
+<marca>Ferrari</marca>
+<modelo> F355 F1 Berlinetta</modelo>
+<año>09/1997</año>
+<color>	Corsa rosso (Rojo)</color>
+<precio>125.000 €</precio>
+<potencia> 380 CV</potencia>
+<combustible> Gasolina</combustible>
+<transmision> Automatica, 6 Velocidades (Trasera)</transmision>
+<kilometraje> 39000 km</kilometraje>
+ <descripcion><![CDATA[
+                    <h1>Revisión a los 40,000 km"</h1>
+                <p>Revision anual de los Kilometros, Sustitucion de la bomba de gasolina.</p>
+                ]]></descripcion>
+            </revision>
+    </coche>
+
+<coche matricula="8765 GKV">
+<revision id="6022009">
+<marca>Ferrari</marca>
+<modelo> 550 Maranello</modelo>
+<año>11/1998 (Rematriculado en 2009)</año>
+<color>	GRIGIO TITANIO (Gris Titanio)</color>
+<precio>125.000 €</precio>
+<potencia> 380 CV</potencia>
+<combustible> Gasolina</combustible>
+<transmision> Automatica, 6 Velocidades (Trasera)</transmision>
+<kilometraje> 44000 km</kilometraje>
+ <descripcion><![CDATA[
+                    <h1>Revisión a los 40,000 km"</h1>
+                <p>Revision anual de los Kilometros, Susitucion de la luna delantera.</p>
+                ]]></descripcion>
+            </revision>
+    </coche>
+
+<coche matricula="4763 MFV">
+<revision id="1022023">
+<marca>Porsche</marca>
+<modelo> 911 (992) Turbo T</modelo>
+<año>05/2023</año>
+<color>	GT Silver Metallic (Gris)</color>
+<precio>144.900€</precio>
+<potencia> 385 CV</potencia>
+<combustible> Gasolina</combustible>
+<transmision> Manual, 7 Velocidades (Trasera)</transmision>
+<kilometraje> 18000 Km</kilometraje>
+ <descripcion><![CDATA[
+                     <h1>Revisión de los 20,000 km"</h1>
+                <p>Cambio de Aceite a los 5000Km</p>
+                ]]></descripcion>
+            </revision>
+    </coche>
+    
+<coche matricula="9436 DFV">
+<revision id="26012005">
+<marca>Porsche</marca>
+<modelo> 911 (964) Turbo 3.3</modelo>
+<año>1991</año>
+<color>	Night Blue (Azul Noche)</color>
+<precio>179.000€</precio>
+<potencia> 320 CV</potencia>
+<combustible> Gasolina</combustible>
+<transmision> Manual, 5 Velocidades (Trasera)</transmision>
+<kilometraje> 111820 km</kilometraje>
+ <descripcion><![CDATA[
+                     <h1>Revisión de los 100.000 km"</h1>
+                <p>Sustitucion de la bomba de gasolina, altenrador y correa de distribucion</p>
+                ]]></descripcion>
+            </revision>
+    </coche>
+    
+<coche matricula="2954 MNS">
+<revision id="31052022">
+<marca>Porsche</marca>
+<modelo> 911 GT RS (992)</modelo>
+<año>2024</año>
+<color>	Night Blue (Azul Noche)</color>
+<precio>357.900 €</precio>
+<potencia> 525 CV</potencia>
+<combustible> Gasolina</combustible>
+<transmision> Automatica, 7 Velocidades (Trasera)</transmision>
+<kilometraje> 111820 km</kilometraje>
+ <descripcion><![CDATA[
+                     <h1>Revisión de los 40,000 km"</h1>
+                <p>Sustitucion de los discos ventilados </p>
+                ]]></descripcion>
+            </revision>
+    </coche>
+
+<coche matricula="4296 BCP">
+<revision id="1012005">
+<marca>Jaguar</marca>
+<modelo> XJSport (XJ6, X300)</modelo>
+<año>1995 (Rematriculado en 2005)</año>
+<color>	Sapphire Blue (Azul Záfiro)</color>
+<precio>11000 €</precio>
+<potencia> 216 CV</potencia>
+<combustible> Gasolina</combustible>
+<transmision> Automatica, 5 Velocidades (Trasera)</transmision>
+<kilometraje> 167000 km</kilometraje>
+ <descripcion><![CDATA[
+                     <h1>Revisión de los 150,000 km"</h1>
+                <p>Sustitucion de la luna delantera y de la correa de distribuicion</p>
+                ]]></descripcion>
+            </revision>
+    </coche>
+
+<coche matricula="7456 HJM">
+<revision id="29022009">
+<marca>Honda</marca>
+<modelo> S2000 (AP2)</modelo>
+<año>2004 (Rematriculado en 2012)</año>
+<color>	Meteor Silver Metallic (Gris Plata Metálico)</color>
+<precio>38.000 €</precio>
+<potencia> 241 CV</potencia>
+<combustible> Gasolina</combustible>
+<transmision> Manual, 6 Velocidades (Trasera)</transmision>
+<kilometraje> 99.000 km</kilometraje>
+ <descripcion><![CDATA[
+                     <h1>Revisión de los 100,000 km"</h1>
+                <p>Cambio embrague a los 90.000Km </p>
+                ]]></descripcion>
+            </revision>
+    </coche>
+
+<coche matricula="6452 LKS">
+<revision id="1082020">
+<marca>Toyota</marca>
+<modelo> GR Supra</modelo>
+<año>2020</año>
+<color>	Amarillo Solar</color>
+<precio>55.900 €</precio>
+<potencia> 340 CV</potencia>
+<combustible> Gasolina</combustible>
+<transmision> Automatica, 8 Velocidades (Trasera)</transmision>
+<kilometraje> 63500 km</kilometraje>
+ <descripcion><![CDATA[
+                     <h1>Revisión de los 60,000 km"</h1>
+                <p>Cambio Bateria</p>
+                ]]></descripcion>
+            </revision>
+    </coche>
+
+
+<coche matricula="7158 HPY">
+<revision id="30042013">
+<marca>Audi</marca>
+<modelo> RS4 Avant 4.2 FSI</modelo>
+<año>2013</año>
+<color>	Platinum Gray Mettalic (Gris Plata Metálico)</color>
+<precio>39.990 €</precio>
+<potencia> 450CV</potencia>
+<combustible> Gasolina</combustible>
+<transmision> Automatica, 7 velocidades (Quattro)</transmision>
+<kilometraje> 225.369km</kilometraje>
+ <descripcion><![CDATA[
+                    <h1>Revisión a los 200,000 km"</h1>
+                    <p>Se realizó una sustitucion de luna delantera y un cambio de aceite a los 5000km.</p>
+                ]]></descripcion>
+            </revision>
+    </coche>
+
+<coche matricula="5482 HLF">
+<revision id="29062012">
+<marca>Lexus</marca>
+<modelo> LS600h</modelo>
+<año>2013</año>
+<color>	Smoky Granite Mica (Negro)</color>
+<precio>29.990 €</precio>
+<potencia> 445 CV</potencia>
+<combustible> Gasolina</combustible>
+<transmision> Automatica, 7 Velocidades (Quattro)</transmision>
+<kilometraje> 155.619 kms</kilometraje>
+ <descripcion><![CDATA[
+                     <h1>Revisión de los 150,000 km"</h1>
+                <p>Repintado aleta delanterra derecha </p>
+                ]]></descripcion>
+            </revision>
+            </coche>
+    </coches>

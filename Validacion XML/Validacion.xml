@@ -1,0 +1,33 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="coches">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="coche" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="revision">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="marca"/>
+                    <xs:element type="xs:string" name="modelo"/>
+                    <xs:element type="xs:string" name="año"/>
+                    <xs:element type="xs:string" name="color"/>
+                    <xs:element type="xs:string" name="precio"/>
+                    <xs:element type="xs:string" name="potencia"/>
+                    <xs:element type="xs:string" name="combustible"/>
+                    <xs:element type="xs:string" name="transmision"/>
+                    <xs:element type="xs:string" name="kilometraje"/>
+                    <xs:element type="xs:string" name="descripcion"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:int" name="id" use="optional"/>
+                  <xs:attribute type="xs:int" name="ID" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="matricula" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
