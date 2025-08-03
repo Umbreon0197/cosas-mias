@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Alta de alumnos</h1>
+    <form action="insertar.php" method="post">
+        <label>Nombre:</label>
+        <input type="text" name="nombre">
+        </br>
+        <label>Email</label>
+        <input type="text" name="mail">
+        </br>
+        <label>Curso</label>
+        <select name="codigocurso">
+            <option value="1">ASIR</option>
+            <option value="2">SMR</option>
+            <option value="3">DAW</option>
+        </select>
+        <br>
+        <label>Imagen</label>
+        <input type="text" name="imagen"><br>
+        <input type="submit" value="Guardar">
+    </form>
+</body>
+</html>
